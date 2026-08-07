@@ -53,3 +53,11 @@ git push origin main
 Sayfa birkaç dakika içinde:
 `https://<kullanici>.github.io/<repo>/`
 adresinde güncellenir.
+
+
+## V2 — Plaka yakalama düzeltmesi
+
+V2, GDELT DOC listesi yerine önce **GDELT Context 2.0 API** ile `plakalı` geçen cümleleri tarar.
+Context API eşleşen haber cümlesinden kısa bir metin parçası döndürdüğü için, plaka başlıkta değil haber gövdesinde geçiyorsa yakalama ihtimali artar.
+
+Önemli: Açık haber kaynağı veya GDELT cümleyi/plakayı sağlamıyorsa uygulama olmayan bir plakayı tahmin etmez.

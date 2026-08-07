@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Digital Fraud Hub - Açık kaynak haberlerden sigorta fraud erken uyarı demosu" />
+  <title>Digital Fraud Hub</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">DF</div>
+        <div>
+          <strong>Digital Fraud Hub</strong>
+          <span>Early Warning</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-view="dashboard">Genel Bakış</button>
+        <button class="nav-item" data-view="news">Canlı Haberler</button>
+        <button class="nav-item" data-view="matches">Eşleşmeler</button>
+        <button class="nav-item" data-view="data">Poliçe / Hasar Verisi</button>
+      </nav>
+
+      <div class="sidebar-note">
+        <span class="status-dot"></span>
+        <div>
+          <strong>Public Demo</strong>
+          <small>GitHub Pages üzerinde statik çalışır.</small>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">TÜRKİYE KATILIM SİGORTA • DEMO</p>
+          <h1>Digital Fraud Hub</h1>
+          <p class="subtitle">Açık kaynak haberleri tarar, plaka sinyallerini poliçe ve hasar kayıtlarıyla eşleştirir.</p>
+        </div>
+        <div class="top-actions">
+          <button id="refreshBtn" class="btn primary">Canlı Haberleri Çek</button>
+        </div>
+      </header>
+
+      <section id="view-dashboard" class="view active">
+        <div class="notice">
+          <strong>Erken uyarı yaklaşımı:</strong>
+          Bu demo otomatik hasar reddi veya ödeme kararı üretmez; inceleme önceliği ve risk sinyali sağlar.
+        </div>
+
+        <div class="kpis">
+          <article class="kpi">
+            <span>Canlı Haber</span>
+            <strong id="kpiNews">0</strong>
+            <small>son sorgu</small>
+          </article>
+          <article class="kpi">
+            <span>Plaka Sinyali</span>
+            <strong id="kpiPlates">0</strong>
+            <small>haber içeriklerinde</small>
+          </article>
+          <article class="kpi">
+            <span>Poliçe Eşleşmesi</span>
+            <strong id="kpiPolicy">0</strong>
+            <small>aktif kayıt</small>
+          </article>
+          <article class="kpi danger">
+            <span>Yüksek Risk</span>
+            <strong id="kpiHigh">0</strong>
+            <small>HIGH / CRITICAL</small>
+          </article>
+        </div>
+
+        <div class="grid two">
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="panel-kicker">CANLI AKIŞ</span>
+                <h2>Son Haber Sinyalleri</h2>
+              </div>
+              <button class="link-btn" data-go="news">Tümünü Gör</button>
+            </div>
+            <div id="dashboardNews" class="list empty-state">
+              Henüz canlı haber çekilmedi.
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="panel-kicker">FRAUD QUEUE</span>
+                <h2>Öncelikli Eşleşmeler</h2>
+              </div>
+              <button class="link-btn" data-go="matches">Tümünü Gör</button>
+            </div>
+            <div id="dashboardMatches" class="list empty-state">
+              Henüz eşleşme oluşmadı.
+            </div>
+          </article>
+        </div>
+
+        <div class="grid two lower">
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="panel-kicker">AKIŞ</span>
+                <h2>Sistem Nasıl Çalışır?</h2>
+              </div>
+            </div>
+            <div class="flow">
+              <div><b>1</b><span>Canlı haber API</span></div>
+              <div><b>2</b><span>Plaka + risk kelimesi</span></div>
+              <div><b>3</b><span>Poliçe eşleştirme</span></div>
+              <div><b>4</b><span>Hasar eşleştirme</span></div>
+              <div><b>5</b><span>Risk skoru & uyarı</span></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="panel-kicker">VERİ GÜVENLİĞİ</span>
+                <h2>Public Demo Modu</h2>
+              </div>
+            </div>
+            <p class="muted">
+              Canlı haber verisi açık internet kaynağından alınır. Poliçe/hasar verileri varsayılan olarak sentetiktir.
+              İstersen CSV yükleyebilirsin; dosya yalnızca tarayıcında işlenir ve herhangi bir sunucuya gönderilmez.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="view-news" class="view">
+        <div class="section-head">
+          <div>
+            <span class="panel-kicker">OPEN SOURCE INTELLIGENCE</span>
+            <h2>Canlı Haber Taraması</h2>
+            <p>GDELT açık haber API'sinden Türkiye kaynaklı trafik/kaza haberleri sorgulanır.</p>
+          </div>
+        </div>
+
+        <article class="panel filters">
+          <div class="field grow">
+            <label for="queryInput">Arama</label>
+            <input id="queryInput" value="(crash OR accident OR collision OR driver) sourcelang:turkish sourcecountry:turkey" />
+          </div>
+          <div class="field">
+            <label for="timespan">Zaman</label>
+            <select id="timespan">
+              <option value="24h">Son 24 saat</option>
+              <option value="3d">Son 3 gün</option>
+              <option value="7d" selected>Son 7 gün</option>
+              <option value="1m">Son 1 ay</option>
+            </select>
+          </div>
+          <div class="field action-field">
+            <label>&nbsp;</label>
+            <button id="searchBtn" class="btn primary">Ara & Analiz Et</button>
+          </div>
+        </article>
+
+        <div id="apiStatus" class="api-status">Hazır. “Ara & Analiz Et” ile canlı veri çekebilirsin.</div>
+        <div id="newsTableWrap" class="panel table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Tarih</th>
+                <th>Kaynak / Haber</th>
+                <th>Plaka</th>
+                <th>Sinyal</th>
+                <th>Risk</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="newsTableBody">
+              <tr><td colspan="6" class="empty-cell">Henüz canlı haber çekilmedi.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="view-matches" class="view">
+        <div class="section-head">
+          <div>
+            <span class="panel-kicker">RISK INTELLIGENCE</span>
+            <h2>Fraud Eşleşmeleri</h2>
+            <p>Haber sinyalleri, tarayıcıdaki poliçe ve hasar kayıtlarıyla eşleştirilir.</p>
+          </div>
+        </div>
+
+        <div id="matchesGrid" class="cards">
+          <div class="panel empty-state">Henüz eşleşme yok. Önce canlı haberleri çek.</div>
+        </div>
+      </section>
+
+      <section id="view-data" class="view">
+        <div class="section-head">
+          <div>
+            <span class="panel-kicker">LOCAL DATA</span>
+            <h2>Poliçe / Hasar Verisi</h2>
+            <p>Public demo için sentetik kayıtlar kullanılır. CSV yüklemeleri yalnızca bu tarayıcı oturumunda tutulur.</p>
+          </div>
+        </div>
+
+        <div class="grid two">
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="panel-kicker">POLİÇE</span>
+                <h2>Poliçe CSV Yükle</h2>
+              </div>
+              <span id="policyCount" class="pill">0 kayıt</span>
+            </div>
+            <p class="muted">Kolonlar: <code>plate,policyNo,status,insured</code></p>
+            <input id="policyFile" type="file" accept=".csv,text/csv" />
+            <div class="row-actions">
+              <button id="samplePolicyBtn" class="btn secondary">Sentetik Veriyi Yükle</button>
+              <button id="clearPolicyBtn" class="btn ghost">Temizle</button>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="panel-kicker">HASAR</span>
+                <h2>Hasar CSV Yükle</h2>
+              </div>
+              <span id="claimCount" class="pill">0 kayıt</span>
+            </div>
+            <p class="muted">Kolonlar: <code>plate,claimNo,status,lossDate</code></p>
+            <input id="claimFile" type="file" accept=".csv,text/csv" />
+            <div class="row-actions">
+              <button id="sampleClaimBtn" class="btn secondary">Sentetik Veriyi Yükle</button>
+              <button id="clearClaimBtn" class="btn ghost">Temizle</button>
+            </div>
+          </article>
+        </div>
+
+        <article class="panel lower">
+          <div class="panel-head">
+            <div>
+              <span class="panel-kicker">VERİ ÖNİZLEME</span>
+              <h2>Tarayıcıdaki Kayıtlar</h2>
+            </div>
+          </div>
+          <div id="dataPreview" class="data-preview empty-state">Henüz veri yüklenmedi.</div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

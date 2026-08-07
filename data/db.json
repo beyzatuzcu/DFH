@@ -1,0 +1,870 @@
+{
+  "policies": [
+    {
+      "id": "P1",
+      "policyNo": "KSK-2026-000184",
+      "plate": "74 ABC 741",
+      "insured": "Demo Sigortalı A.Ş.",
+      "product": "Kasko",
+      "status": "ACTIVE",
+      "startDate": "2026-03-10",
+      "endDate": "2027-03-10"
+    },
+    {
+      "id": "P2",
+      "policyNo": "KSK-2026-000209",
+      "plate": "34 TKS 2026",
+      "insured": "Demo Müşteri",
+      "product": "Kasko",
+      "status": "ACTIVE",
+      "startDate": "2026-05-01",
+      "endDate": "2027-05-01"
+    },
+    {
+      "id": "P3",
+      "policyNo": "TRF-2026-000087",
+      "plate": "06 FRD 61",
+      "insured": "Demo Firma",
+      "product": "Trafik",
+      "status": "ACTIVE",
+      "startDate": "2026-01-15",
+      "endDate": "2027-01-15"
+    },
+    {
+      "id": "P4",
+      "policyNo": "KSK-2025-000999",
+      "plate": "35 XYZ 35",
+      "insured": "Demo Eski Müşteri",
+      "product": "Kasko",
+      "status": "PASSIVE",
+      "startDate": "2025-01-01",
+      "endDate": "2026-01-01"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "claimNo": "HSR-2026-00451",
+      "plate": "06 FRD 61",
+      "status": "OPEN",
+      "lossDate": "2026-08-04",
+      "noticeDate": "2026-08-05",
+      "reserve": 275000
+    },
+    {
+      "id": "C2",
+      "claimNo": "HSR-2026-00371",
+      "plate": "34 TKS 2026",
+      "status": "CLOSED",
+      "lossDate": "2026-07-10",
+      "noticeDate": "2026-07-10",
+      "reserve": 85000
+    }
+  ],
+  "news": [
+    {
+      "title": "Ankara’da araç takla attı: sürücü yaralandı",
+      "source": "Yerel Haber • Demo",
+      "content": "06 FRD 61 plakalı araç gece yarısı savrularak takla attı. Kazada sürücü yaralandı, ekipler olay yerine sevk edildi.",
+      "publishedAt": "2026-08-07T10:42:26.509Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099346509",
+      "detectedPlates": [
+        "06 FRD 61"
+      ],
+      "keywords": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:26.509Z"
+    },
+    {
+      "title": "İstanbul’da olay yerinden kaçan sürücü aranıyor",
+      "source": "Şehir Haber • Demo",
+      "content": "34 TKS 2026 plakalı aracın karıştığı kazanın ardından sürücünün olay yerinden kaçtığı iddia edildi. Araçta maddi hasar meydana geldi.",
+      "publishedAt": "2026-08-07T10:42:25.901Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099345901",
+      "detectedPlates": [
+        "34 TKS 2026"
+      ],
+      "keywords": [
+        "Olay yerinden kaçma"
+      ],
+      "createdAt": "2026-08-07T10:42:25.901Z"
+    },
+    {
+      "title": "İstanbul’da olay yerinden kaçan sürücü aranıyor",
+      "source": "Şehir Haber • Demo",
+      "content": "34 TKS 2026 plakalı aracın karıştığı kazanın ardından sürücünün olay yerinden kaçtığı iddia edildi. Araçta maddi hasar meydana geldi.",
+      "publishedAt": "2026-08-07T10:42:25.555Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099345555",
+      "detectedPlates": [
+        "34 TKS 2026"
+      ],
+      "keywords": [
+        "Olay yerinden kaçma"
+      ],
+      "createdAt": "2026-08-07T10:42:25.555Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:42:24.979Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099344979",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:24.979Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:42:24.486Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099344486",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:24.486Z"
+    },
+    {
+      "title": "Ankara’da araç takla attı: sürücü yaralandı",
+      "source": "Yerel Haber • Demo",
+      "content": "06 FRD 61 plakalı araç gece yarısı savrularak takla attı. Kazada sürücü yaralandı, ekipler olay yerine sevk edildi.",
+      "publishedAt": "2026-08-07T10:42:24.253Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099344254",
+      "detectedPlates": [
+        "06 FRD 61"
+      ],
+      "keywords": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:24.254Z"
+    },
+    {
+      "title": "Ankara’da araç takla attı: sürücü yaralandı",
+      "source": "Yerel Haber • Demo",
+      "content": "06 FRD 61 plakalı araç gece yarısı savrularak takla attı. Kazada sürücü yaralandı, ekipler olay yerine sevk edildi.",
+      "publishedAt": "2026-08-07T10:42:24.019Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099344020",
+      "detectedPlates": [
+        "06 FRD 61"
+      ],
+      "keywords": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:24.020Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:42:23.793Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099343794",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:23.794Z"
+    },
+    {
+      "title": "İstanbul’da olay yerinden kaçan sürücü aranıyor",
+      "source": "Şehir Haber • Demo",
+      "content": "34 TKS 2026 plakalı aracın karıştığı kazanın ardından sürücünün olay yerinden kaçtığı iddia edildi. Araçta maddi hasar meydana geldi.",
+      "publishedAt": "2026-08-07T10:42:23.532Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099343533",
+      "detectedPlates": [
+        "34 TKS 2026"
+      ],
+      "keywords": [
+        "Olay yerinden kaçma"
+      ],
+      "createdAt": "2026-08-07T10:42:23.533Z"
+    },
+    {
+      "title": "Ankara’da araç takla attı: sürücü yaralandı",
+      "source": "Yerel Haber • Demo",
+      "content": "06 FRD 61 plakalı araç gece yarısı savrularak takla attı. Kazada sürücü yaralandı, ekipler olay yerine sevk edildi.",
+      "publishedAt": "2026-08-07T10:42:23.342Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099343342",
+      "detectedPlates": [
+        "06 FRD 61"
+      ],
+      "keywords": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:23.342Z"
+    },
+    {
+      "title": "İstanbul’da olay yerinden kaçan sürücü aranıyor",
+      "source": "Şehir Haber • Demo",
+      "content": "34 TKS 2026 plakalı aracın karıştığı kazanın ardından sürücünün olay yerinden kaçtığı iddia edildi. Araçta maddi hasar meydana geldi.",
+      "publishedAt": "2026-08-07T10:42:23.149Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099343149",
+      "detectedPlates": [
+        "34 TKS 2026"
+      ],
+      "keywords": [
+        "Olay yerinden kaçma"
+      ],
+      "createdAt": "2026-08-07T10:42:23.149Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:42:22.781Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099342782",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:22.782Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:42:22.415Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099342416",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:22.416Z"
+    },
+    {
+      "title": "İstanbul’da olay yerinden kaçan sürücü aranıyor",
+      "source": "Şehir Haber • Demo",
+      "content": "34 TKS 2026 plakalı aracın karıştığı kazanın ardından sürücünün olay yerinden kaçtığı iddia edildi. Araçta maddi hasar meydana geldi.",
+      "publishedAt": "2026-08-07T10:42:21.887Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099341888",
+      "detectedPlates": [
+        "34 TKS 2026"
+      ],
+      "keywords": [
+        "Olay yerinden kaçma"
+      ],
+      "createdAt": "2026-08-07T10:42:21.888Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:42:21.424Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099341424",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:21.424Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:42:20.862Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099340862",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:20.862Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:42:20.186Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099340187",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:20.187Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:42:19.817Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099339818",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:19.818Z"
+    },
+    {
+      "title": "Ankara’da araç takla attı: sürücü yaralandı",
+      "source": "Yerel Haber • Demo",
+      "content": "06 FRD 61 plakalı araç gece yarısı savrularak takla attı. Kazada sürücü yaralandı, ekipler olay yerine sevk edildi.",
+      "publishedAt": "2026-08-07T10:42:19.176Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099339176",
+      "detectedPlates": [
+        "06 FRD 61"
+      ],
+      "keywords": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:19.177Z"
+    },
+    {
+      "title": "İstanbul’da olay yerinden kaçan sürücü aranıyor",
+      "source": "Şehir Haber • Demo",
+      "content": "34 TKS 2026 plakalı aracın karıştığı kazanın ardından sürücünün olay yerinden kaçtığı iddia edildi. Araçta maddi hasar meydana geldi.",
+      "publishedAt": "2026-08-07T10:42:18.587Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099338588",
+      "detectedPlates": [
+        "34 TKS 2026"
+      ],
+      "keywords": [
+        "Olay yerinden kaçma"
+      ],
+      "createdAt": "2026-08-07T10:42:18.588Z"
+    },
+    {
+      "title": "Ankara’da araç takla attı: sürücü yaralandı",
+      "source": "Yerel Haber • Demo",
+      "content": "06 FRD 61 plakalı araç gece yarısı savrularak takla attı. Kazada sürücü yaralandı, ekipler olay yerine sevk edildi.",
+      "publishedAt": "2026-08-07T10:42:18.270Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099338270",
+      "detectedPlates": [
+        "06 FRD 61"
+      ],
+      "keywords": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:18.270Z"
+    },
+    {
+      "title": "İstanbul’da olay yerinden kaçan sürücü aranıyor",
+      "source": "Şehir Haber • Demo",
+      "content": "34 TKS 2026 plakalı aracın karıştığı kazanın ardından sürücünün olay yerinden kaçtığı iddia edildi. Araçta maddi hasar meydana geldi.",
+      "publishedAt": "2026-08-07T10:42:16.759Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099336760",
+      "detectedPlates": [
+        "34 TKS 2026"
+      ],
+      "keywords": [
+        "Olay yerinden kaçma"
+      ],
+      "createdAt": "2026-08-07T10:42:16.760Z"
+    },
+    {
+      "title": "Ankara’da araç takla attı: sürücü yaralandı",
+      "source": "Yerel Haber • Demo",
+      "content": "06 FRD 61 plakalı araç gece yarısı savrularak takla attı. Kazada sürücü yaralandı, ekipler olay yerine sevk edildi.",
+      "publishedAt": "2026-08-07T10:42:04.992Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099324993",
+      "detectedPlates": [
+        "06 FRD 61"
+      ],
+      "keywords": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:42:04.993Z"
+    },
+    {
+      "title": "Bartın’da alkollü sürücü kazaya karıştı",
+      "source": "Bartın Gündem • Demo",
+      "content": "Gece saatlerinde 74 ABC 741 plakalı otomobil kontrolden çıkarak bariyerlere çarptı. Sürücünün alkollü olduğu ve aracın ağır hasarlı hale geldiği belirtildi.",
+      "publishedAt": "2026-08-07T10:41:41.275Z",
+      "url": "https://example.com/demo",
+      "id": "NEWS-1786099301276",
+      "detectedPlates": [
+        "74 ABC 741"
+      ],
+      "keywords": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı"
+      ],
+      "createdAt": "2026-08-07T10:41:41.276Z"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALT-1786099346509-79tlj0",
+      "newsId": "NEWS-1786099346509",
+      "plate": "06 FRD 61",
+      "score": 65,
+      "level": "HIGH",
+      "reasons": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "TRF-2026-000087",
+      "claimNo": "HSR-2026-00451",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:26.509Z"
+    },
+    {
+      "id": "ALT-1786099345901-o80vx8",
+      "newsId": "NEWS-1786099345901",
+      "plate": "34 TKS 2026",
+      "score": 70,
+      "level": "HIGH",
+      "reasons": [
+        "Olay yerinden kaçma",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "KSK-2026-000209",
+      "claimNo": "HSR-2026-00371",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:25.901Z"
+    },
+    {
+      "id": "ALT-1786099345555-0get31",
+      "newsId": "NEWS-1786099345555",
+      "plate": "34 TKS 2026",
+      "score": 70,
+      "level": "HIGH",
+      "reasons": [
+        "Olay yerinden kaçma",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "KSK-2026-000209",
+      "claimNo": "HSR-2026-00371",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:25.555Z"
+    },
+    {
+      "id": "ALT-1786099344979-qd368q",
+      "newsId": "NEWS-1786099344979",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:24.979Z"
+    },
+    {
+      "id": "ALT-1786099344486-77puxi",
+      "newsId": "NEWS-1786099344486",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:24.486Z"
+    },
+    {
+      "id": "ALT-1786099344254-fc5zlh",
+      "newsId": "NEWS-1786099344254",
+      "plate": "06 FRD 61",
+      "score": 65,
+      "level": "HIGH",
+      "reasons": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "TRF-2026-000087",
+      "claimNo": "HSR-2026-00451",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:24.254Z"
+    },
+    {
+      "id": "ALT-1786099344020-g7tswb",
+      "newsId": "NEWS-1786099344020",
+      "plate": "06 FRD 61",
+      "score": 65,
+      "level": "HIGH",
+      "reasons": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "TRF-2026-000087",
+      "claimNo": "HSR-2026-00451",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:24.020Z"
+    },
+    {
+      "id": "ALT-1786099343794-c0m7jk",
+      "newsId": "NEWS-1786099343794",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:23.794Z"
+    },
+    {
+      "id": "ALT-1786099343533-jxgl9w",
+      "newsId": "NEWS-1786099343533",
+      "plate": "34 TKS 2026",
+      "score": 70,
+      "level": "HIGH",
+      "reasons": [
+        "Olay yerinden kaçma",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "KSK-2026-000209",
+      "claimNo": "HSR-2026-00371",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:23.533Z"
+    },
+    {
+      "id": "ALT-1786099343342-tb9t8w",
+      "newsId": "NEWS-1786099343342",
+      "plate": "06 FRD 61",
+      "score": 65,
+      "level": "HIGH",
+      "reasons": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "TRF-2026-000087",
+      "claimNo": "HSR-2026-00451",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:23.342Z"
+    },
+    {
+      "id": "ALT-1786099343149-ykniv3",
+      "newsId": "NEWS-1786099343149",
+      "plate": "34 TKS 2026",
+      "score": 70,
+      "level": "HIGH",
+      "reasons": [
+        "Olay yerinden kaçma",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "KSK-2026-000209",
+      "claimNo": "HSR-2026-00371",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:23.149Z"
+    },
+    {
+      "id": "ALT-1786099342782-pd1v3l",
+      "newsId": "NEWS-1786099342782",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:22.782Z"
+    },
+    {
+      "id": "ALT-1786099342416-nkcp5f",
+      "newsId": "NEWS-1786099342416",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:22.416Z"
+    },
+    {
+      "id": "ALT-1786099341888-yhp4dq",
+      "newsId": "NEWS-1786099341888",
+      "plate": "34 TKS 2026",
+      "score": 70,
+      "level": "HIGH",
+      "reasons": [
+        "Olay yerinden kaçma",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "KSK-2026-000209",
+      "claimNo": "HSR-2026-00371",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:21.888Z"
+    },
+    {
+      "id": "ALT-1786099341424-taa6yi",
+      "newsId": "NEWS-1786099341424",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:21.424Z"
+    },
+    {
+      "id": "ALT-1786099340862-iudkm4",
+      "newsId": "NEWS-1786099340862",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:20.862Z"
+    },
+    {
+      "id": "ALT-1786099340187-o5pmlf",
+      "newsId": "NEWS-1786099340187",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:20.187Z"
+    },
+    {
+      "id": "ALT-1786099339818-2x9unt",
+      "newsId": "NEWS-1786099339818",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:19.818Z"
+    },
+    {
+      "id": "ALT-1786099339177-zo3bor",
+      "newsId": "NEWS-1786099339176",
+      "plate": "06 FRD 61",
+      "score": 65,
+      "level": "HIGH",
+      "reasons": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "TRF-2026-000087",
+      "claimNo": "HSR-2026-00451",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:19.177Z"
+    },
+    {
+      "id": "ALT-1786099338588-0qva2a",
+      "newsId": "NEWS-1786099338588",
+      "plate": "34 TKS 2026",
+      "score": 70,
+      "level": "HIGH",
+      "reasons": [
+        "Olay yerinden kaçma",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "KSK-2026-000209",
+      "claimNo": "HSR-2026-00371",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:18.588Z"
+    },
+    {
+      "id": "ALT-1786099338270-9yn64j",
+      "newsId": "NEWS-1786099338270",
+      "plate": "06 FRD 61",
+      "score": 65,
+      "level": "HIGH",
+      "reasons": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "TRF-2026-000087",
+      "claimNo": "HSR-2026-00451",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:18.270Z"
+    },
+    {
+      "id": "ALT-1786099336760-pqu1hj",
+      "newsId": "NEWS-1786099336760",
+      "plate": "34 TKS 2026",
+      "score": 70,
+      "level": "HIGH",
+      "reasons": [
+        "Olay yerinden kaçma",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "KSK-2026-000209",
+      "claimNo": "HSR-2026-00371",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:16.760Z"
+    },
+    {
+      "id": "ALT-1786099324993-uqoy7y",
+      "newsId": "NEWS-1786099324993",
+      "plate": "06 FRD 61",
+      "score": 65,
+      "level": "HIGH",
+      "reasons": [
+        "Yaralanmalı kaza",
+        "Takla / savrulma",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Hasar dosyası ile eşleşti"
+      ],
+      "policyNo": "TRF-2026-000087",
+      "claimNo": "HSR-2026-00451",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:42:04.993Z"
+    },
+    {
+      "id": "ALT-1786099301277-2cv07d",
+      "newsId": "NEWS-1786099301276",
+      "plate": "74 ABC 741",
+      "score": 95,
+      "level": "CRITICAL",
+      "reasons": [
+        "Alkol şüphesi",
+        "Ağır hasar",
+        "Gece olayı",
+        "Aktif TKS poliçesi ile eşleşti",
+        "Henüz hasar ihbarı yok – erken uyarı"
+      ],
+      "policyNo": "KSK-2026-000184",
+      "status": "NEW",
+      "createdAt": "2026-08-07T10:41:41.277Z"
+    }
+  ]
+}

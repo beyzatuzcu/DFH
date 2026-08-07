@@ -140,22 +140,21 @@
           <div>
             <span class="panel-kicker">OPEN SOURCE INTELLIGENCE</span>
             <h2>Canlı Haber Taraması</h2>
-            <p>GDELT açık haber API'sinden Türkiye kaynaklı trafik/kaza haberleri sorgulanır.</p>
+            <p>GDELT Context API ile özellikle plaka geçen trafik/kaza cümleleri taranır; genel haber akışı yedek kaynak olarak kullanılır.</p>
           </div>
         </div>
 
         <article class="panel filters">
           <div class="field grow">
             <label for="queryInput">Arama</label>
-            <input id="queryInput" value="(crash OR accident OR collision OR driver) sourcelang:turkish sourcecountry:turkey" />
+            <input id="queryInput" value="plakalı (kaza OR çarpıştı OR çarptı OR devrildi OR takla)" />
           </div>
           <div class="field">
             <label for="timespan">Zaman</label>
             <select id="timespan">
               <option value="24h">Son 24 saat</option>
-              <option value="3d">Son 3 gün</option>
-              <option value="7d" selected>Son 7 gün</option>
-              <option value="1m">Son 1 ay</option>
+              <option value="72h" selected>Son 72 saat</option>
+              <option value="72h">Context API sınırı: 72 saat</option>
             </select>
           </div>
           <div class="field action-field">
